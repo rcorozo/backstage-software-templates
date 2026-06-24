@@ -37,6 +37,25 @@ spec:
           app_name: ${{parameters.component_id}}
           app_env: ${{parameters.environment}}
 
+    - id: create-catalog-info-file
+      name: Create catalog file
+      action: catalog:write
+      input:
+        entity:
+          apiVersion: backstage.io/v1alpha1
+          kind: Component
+          metadata:
+            name: ${{parameters.component_id}}
+            description: Python app that displays time - named ${{parameters.component_id}}
+            annotations:
+              github.com/project-slug: rcorozo/${{parameters.component_id}}
+              backstage.io/techdocs-ref: dir:.
+              c11bits.com/project-name: rcorozo
+          spec:
+            type: service
+            lifecycle: experimental
+            owner: development
+
     - id: publish
       name: Publish
       action: publish:github
