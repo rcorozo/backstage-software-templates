@@ -48,7 +48,7 @@ spec:
             name: ${{parameters.component_id}}
             description: Python app that displays time - named ${{parameters.component_id}}
             annotations:
-              github.com/project-slug: rcorozo/${{parameters.component_id}}
+              github.com/project-slug: c11bits/${{parameters.component_id}}
               backstage.io/techdocs-ref: dir:.
               c11bits.com/project-name: rcorozo
           spec:
@@ -61,7 +61,7 @@ spec:
       action: publish:github
       input:
         description: This is ${{ parameters.component_id }}
-        repoUrl: github.com?owner=rcorozo&repo=${{parameters.component_id}}
+        repoUrl: github.com?owner=c11bits&repo=${{parameters.component_id}}
         protectDefaultBranch: false
         repoVisibility: public
         defaultBranch: main
