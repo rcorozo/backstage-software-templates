@@ -64,6 +64,7 @@ spec:
         repoUrl: github.com?owner=rcorozo&repo=${{parameters.component_id}}
         protectDefaultBranch: false
         repoVisibility: public
+        defaultBranch: main
 
     - id: register
       name: Register
