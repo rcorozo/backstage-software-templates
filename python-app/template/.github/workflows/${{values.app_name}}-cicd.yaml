@@ -1,6 +1,7 @@
 name: ${{values.app_name}}-cicd
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - src/**
