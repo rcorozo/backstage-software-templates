@@ -18,6 +18,8 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 5000
+ingress:
+  enabled: false
 resources:
   requests:
     cpu: 50m
