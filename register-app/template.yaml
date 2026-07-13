@@ -22,11 +22,11 @@ spec:
       name: Register
       action: catalog:register
       input:
-        repoContentsUrl: https://github.com/rcorozo/${{ parameters.component_id }}/blob/main
+        repoContentsUrl: https://github.com/c11bits/${{ parameters.component_id }}/blob/main
         catalogInfoPath: "/catalog-info.yaml"
   output:
     links:
       - title: Repository
-        url: https://github.com/rcorozo//${{ parameters.component_id }}
+        url: https://github.com/c11bits//${{ parameters.component_id }}
 
 
